@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aprendiz</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <p class="titulo">Actualizar datos</p>
+    <!--Creación de la ventana modal con la informacion de cambio de contraseña del usuatio-->
+    <div class="boton" style="margin-top: 60px;">
+      <button id="cambiar" class="btn btn-info" data-toggle="modal" data-target="#miventana">
+        Cambiar contraseña
+      </button>
+      <!--Constructores de la ventana modal-->
+      <div class="modal fade" id="miventana"
+      tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4>Cambiar contraseña</h4>
+          </div>
+          <div class="modal-body">
+            <form class="infor">
+              <table id="info">
+              <tr>
+                <td class="tabla">Digite la contraseña actual</td>
+                <td><input type="password" placeholder="Contraseña anterior"></td>
+              </tr>
+              <tr>
+                <td class="tabla">Digite la nueva contraseña</td>
+                <td><input type="password" placeholder="nueva contraseña"></td>
+              </tr>
+              <tr>
+                <td class="tabla">Confirmar nueva contraseña</td>
+                <td><input type="password" placeholder="confirmar contraseña"></td>
+              </tr>               
+              </table>
+            </form>
+          </div>
+          <div class="modal-body">
+            <button type="button"class="btn btn-primary" data-dismiss="modal">Guardar</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Tabla con su respectivo contenido-->
+    <div class="fondo">
+      <form class="informacion" title="Actualizar" method="POST">
+        <table class="tabInfo" id="contact_table" align="center">
+          <tr>
+            <td class="campo">Nombres</td>
+            <td><input type="text" placeholder="John Doe"required/></td>
+            <td class="campo">Apellidos</td>
+            <td><input type="text" placeholder="Sena Sofia"required/></td>
+          </tr>
+          <tr>
+            <td class="campo">Idetificación</td>
+            <td>
+              <select>
+                <option>Cedula de ciudadania</option>
+                <option>tarjeta de identidad</option>
+              </select>
+            </td>
+            <td class="campo">Número</td>
+            <td><input type="text" required/></td>
+          </tr>
+          <tr>
+            <td class="campo">Direccion</td>
+            <td><input id="form" type="text" placeholder="GENERAL TERRITORIAL Carrera 18 No. 84 - 35, Bogotá; D.C.." ></td>
+          </tr>
+          <tr>
+            <td class="campo">Teléfono</td>
+            <td><input type="text" placeholder="34444565"></td>
+            <td class="campo">Estado laboral</td>
+            <td>
+              <select>
+                <option>Empleado</option>
+                <option>Desempleado</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="campo">Título</td>
+            <td><input type="text" placeholder="Tecnologo en ADSI" required/></td>
+          </tr>
+          <tr>
+            <td class="campo">Fecha de nacimiento</td>
+            <td id="tipo"><input type="date" value="2014-08-16"></td> 
+          </tr>
+          <tr>
+            <td><input type="submit"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
