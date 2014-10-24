@@ -19,10 +19,9 @@
     <![endif]-->
   </head>
   <body>
-    <p class="titulo">Actualizar datos</p>
     <!--Creación de la ventana modal con la informacion de cambio de contraseña del usuatio-->
-    <div class="boton" style="margin-top: 60px;">
-      <button id="cambiar" class="btn btn-info" data-toggle="modal" data-target="#miventana">
+    <div class="bot" style="margin-top: 60px;">
+      <button class="botones" data-toggle="modal" data-target="#miventana">
         Cambiar contraseña
       </button>
       <!--Constructores de la ventana modal-->
@@ -60,9 +59,10 @@
       </div>
     </div>
     <!--Tabla con su respectivo contenido-->
-    <div class="fondo">
-      <form class="informacion" title="Actualizar" method="POST">
-        <table class="tabInfo" id="contact_table" align="center">
+    <div id="fondo">
+    <div class="titulo"><p id="texto">Actualizar datos</p></div>
+      <form action="Registrar" class="informacion" title="Actualizar" method="POST">
+        <table class="tabInfo">
           <tr>
             <td class="campo">Nombres</td>
             <td><input type="text" placeholder="John Doe"required/></td>
@@ -82,7 +82,7 @@
           </tr>
           <tr>
             <td class="campo">Direccion</td>
-            <td><input id="form" type="text" placeholder="GENERAL TERRITORIAL Carrera 18 No. 84 - 35, Bogotá; D.C.." ></td>
+            <td colspan="3"><input id="largo" type="text" placeholder="GENERAL TERRITORIAL Carrera 18 No. 84 - 35, Bogotá; D.C.." ></td>
           </tr>
           <tr>
             <td class="campo">Teléfono</td>
@@ -101,10 +101,10 @@
           </tr>
           <tr>
             <td class="campo">Fecha de nacimiento</td>
-            <td id="tipo"><input type="date" value="2014-08-16"></td> 
+            <td><input type="date" value="2014-08-16"></td> 
           </tr>
           <tr>
-            <td><input type="submit"></td>
+            <td><button class="botones">Guardar</button></td>
           </tr>
         </table>
       </form>
