@@ -1,0 +1,203 @@
+*
+{
+	margin:0px;
+	padding: 0px
+}
+/**
+ * Tamaño de la pagina
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+div#regAprendiz
+{
+	width: 980px;
+}
+/**
+ * CSS del titulo del formulario
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+div.titulo
+{
+	width: 200px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #639BB3;
+	border-radius:15px; 
+	box-shadow: 0px 5px 15px #939393;
+}
+p#texto
+{
+	margin-top: 10px;
+	font-family: arial;
+	font-size: 15px;
+	color:white;
+	text-align: center;
+}
+/**
+ * Fondo, margenes de todo el formulario
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion
+		{
+			background-color: #F1EDFF;
+			width: 960px;
+			margin: 40px;
+			padding: 40px;
+			border-radius:15px; 
+		}
+		form.informacion table.tabInfo
+		{
+			margin:auto;
+			border-spacing: 5px;
+			width: 900px	
+		}
+/**
+ * Color de fondo, tipo de letra, color de leta , color de fonde para los label
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion td.campo
+		{
+			padding: 10px;
+			font-family: arial;
+			color:white;
+			width: 200px;
+			height: 20px;
+			border-bottom: 1px;
+			background-color: #639BB3;
+			border-radius:15px; 
+		}
+
+		form.informacion select
+		{
+			width: 225px;
+			height: 35px;
+		}
+/**
+ * Mayor tamaño para el area de texto para la Direccion y  el Titulo
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion input#largo
+		{
+			width: 400px
+		}
+/**
+ * Tamaño para  las areas de texto , tipo de letra y tamaño de letra
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion input
+		{
+			font-family: arial;
+			font-size: 15px;
+			width: 200px;
+			height: 20px;
+			padding: 5px ;
+			border-radius:15px; 
+		}
+/**
+ * Tamaño para los comboBox  tipo de letra y ramaño de letra
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion select
+		{
+			font-family: arial;
+			font-size: 15px;
+			width: 225px;
+			height: 35px;
+			padding: 5px ;
+			border-radius:15px; 
+		}
+/**
+ * Sombreado en el interior de los campos de texto
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion input, select
+		{
+			border:1px solid #eee;
+			box-shadow: 0px 0px 5px #000,0 10px 15px #E0DFDF inset;
+			padding-right: 20px;
+			-webkit-transition: padding 0.2s;
+			-moz-transition: padding 0.2s;
+			-o-transition: padding 0.2s;
+			transition: padding 0.2s;
+		}
+/**
+ * Efecto para los campos de texto, al darle focus cambia de color su interior
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion select:focus, input#largo:focus
+		{
+			background: #FFFFFF;
+			border:1px solid #060348;
+			border-radius: 15px;	
+			box-shadow: 0px 0px 3px;
+			padding-right: 30px;
+			outline:none;		
+		}
+/**
+ * Efecto para los campos de texto, al darle focus cambia de color su interior
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		form.informacion input:focus 
+		{
+			background: #FFFFFF;
+			border:1px solid #060348;
+			border-radius: 15px;	
+			box-shadow: 0px 0px 3px;
+			outline:none;			
+		}
+		form.informacion input:required
+		{
+			background:#FFFFFF url(../Imagenes/malo.png) no-repeat 90% center;
+
+		}
+		form.informacion input:required:valid
+		{
+			background: #FFFFFF url(../Imagenes/bueno.png) no-repeat 90% center;
+			border-color: #35FC03;
+		}
+		form.informacion input:focus:invalid
+		{
+			background: #FFFFFF url(../Imagenes/invalido.png) no-repeat 90% center;	
+			border-color: #FC030F;
+		}
+/**
+ * Animacion y estilo para los botones
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+
+ form.informacion .botones
+ {
+	padding: 10px;
+	font-family: arial;
+	font-size:15px;
+	color:white;
+	width: 150px;
+	height: 35px;
+	border-bottom: 1px;
+	background-color: #639BB3;
+	border-radius:15px; 
+	box-shadow: 0px 0px 5px #000,0 4px 8px #FFFFFF inset;
+	-webkit-transition: padding 0.2s;
+	-moz-transition: padding 0.2s;
+	-o-transition: padding 0.2s;
+	transition: padding 0.2s;
+ }
+
+ form.informacion .botones:focus
+ {
+ 	box-shadow: 0px 0px 5px #000,0 8px 16px #FFFFFF inset;
+ 	font-size: 17px;
+ 	outline:none;
+ }

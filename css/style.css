@@ -1,0 +1,186 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+/**
+ * Tamaño de la pagina
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+div#general
+{
+	margin:auto;
+	margin-top:30px;
+	width:1200px;
+	height:800px;
+}
+/**
+ * Logo del SENA e informacion del USUARIO
+ * @author Jhonny Alexander Morales Gaviria
+ * @version 1.0
+ */
+div#usuario
+{
+	width:1200px;
+	height:200px;
+}
+/**
+ * Efecto Icono SENA encabezado
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+	 img#iconSena
+	 {
+	 	padding: 10px;
+	 	width: 150px;
+	 	display: block;
+		-webkit-transition: width 0.6s;
+		-moz-transition: width 0.6s;
+		-o-transition: width 0.6s;
+		transition: width 0.6s;
+	 }
+
+	 img#iconSena:hover
+	 {
+	 	width: 160px;
+	 }
+
+/**
+ * Botones para Registro APRENDIZ, EMPRESAS, ADMINISTRACION Y BIENESTAR
+ * @author Jhonny Alexander Morales Gaviria
+ * @version 1.0
+ */
+div#body
+{
+	float:right;
+	margin-top: 20px;
+	width:980px;
+	height:580px;
+}
+		header
+		{
+			width: 700px;
+			height: 40px;
+			margin:20px auto;	
+		}
+/**
+* Menu de Botones de REGISTRO
+* @author Jhonny Alexander Morales Gaviria
+* @versiofont-size
+*/	
+		div.contenedor
+		{
+			background-color: blue;
+			width:170px;
+			height: 40px;
+			float: left; 
+			background-color: #639BB3;
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			border-radius:0px 0px 15px 15px; 
+			box-shadow: 0px 5px 15px #939393;
+			-webkit-transition: height 0.6s;
+			-moz-transition: height 0.6s;
+			-o-transition: height 0.6s;
+			transition: height 0.6s;
+		}
+/**
+ * Animacion Cuando el cursor pasa por encima de los botones
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+				div.contenedor:hover
+				{
+					height: 50px;
+				}
+/**
+ * Letra para los BOTONES de registro
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		p.texto
+		{
+			font-family: arial;
+			font-size: 15px;
+			color:white;
+			text-align: center;
+			-webkit-transition: padding-top 0.6s;
+			-moz-transition: padding-top 0.6s;
+			-o-transition: padding-top 0.6s;
+			transition: padding-top 0.6s;
+		}
+				div.contenedor:hover p.texto
+				{
+					padding-top: 10px;
+					opacity: 1;
+				}
+
+
+/**
+ * Menu de busqueda EGRESADOS y EMPRESAS
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */		
+div#menu
+{
+	margin-top:20px;
+	width:200px;
+	height:580px;	
+}
+div#menu ul
+		{
+			list-style: none;
+			padding-left: 0px; 
+		}
+
+/**
+ * Animaciones para los LINKS de la pagina
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+			a:link
+			{
+				text-decoration: none; color:#FFFFFF;
+			}
+			a:visited 
+			{
+				text-decoration:none;color:#FFFFFF;
+			} 
+			a:active 
+			{
+				text-decoration:none;color:#CBC9C9;
+			}
+			a:hover 
+			{
+				text-decoration:none;color:#CBC9C9;
+			}
+
+/**
+ * Animacion y estilo de Empreseas y egresados
+ * @author Jhonny Alexander Morales Gaviria
+ * @versiofont-size
+ */	
+		div#menu ul li
+		{
+			margin-top: 15px;
+			font-family: arial;
+			font-size: 20px;
+			background-color:#639BB3;
+			width:150px;
+			padding-top: 10px;
+			padding-left: 20px;
+			padding-bottom: 10px;
+			border-radius:0px 20px 20px 0px; 
+			box-shadow: 5px 0px 10px #939393;
+			color:white;
+			-webkit-transition: padding-left 0.6s;
+			-moz-transition: padding-left 0.6s;
+			-o-transition: padding-left 0.6s;
+			transition: padding-left 0.6s;
+		}
+			div#menu ul li:hover
+			{
+				padding-left: 50px
+			}
+

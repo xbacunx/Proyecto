@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario Aprendiz</title>
+
+    <!-- Bootstrap -->
+  <link href="css/estilosFormularios.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!--
+ Éstructura del formulario aprendices
+ @author Jhonny Alexander Morales Gaviria
+ @versiofont-size
+-->
+    <div id="regAprendiz">
+      <div class="titulo"> <p id="texto">Registro de Aprendiz</p></div>
+          <form action="registrar" method="POST" class="informacion">
+            <table class="tabInfo">
+              <tr>
+                  <td class="campo">Nombre</td>
+                  <td>
+                      <input name="nombre" type="text" placeholder="Juan" required/>
+                  </td>
+                  <td class="campo">Apellidos</td>
+                  <td>
+                      <input name="apellidos"type="text"placeholder="Perez Moncada"required/>
+                  </td>                  
+              </tr>
+              <tr>
+                  <td class="campo">Tipo Identificacion</td>
+                  <td>
+                      <select name="opCiudad" >
+                          <option value="">Cedula de Ciudadania</option>
+                          <option value="">Tarjeta de Identidad</option>
+                          <option value="">Cedula de Extrajeria</option>           
+                      </select>
+                  </td>
+                  <td class="campo">Numero de Identificacion</td>
+                  <td>
+                      <input name="identificacion"type="tel"placeholder="993765789"required/>
+                  </td>  
+              </tr>
+                <tr>
+                  <td class="campo">Fecha de Nacimiento</td>
+                  <td>
+                      <input type="date" value="1970-01-01" />
+                  </td>              
+              </tr>
+              <tr>
+                  <td class="campo">Direccion</td>
+                  <td colspan="3">
+                      <input id="largo" name="Direccion" type="text" placeholder="Direccion de  Residencia"/>
+                  </td>                 
+              </tr>
+              <tr>
+                  <td class="campo">Departamento</td>
+                  <td>
+                      <select name="opCiudadResidencia" class="seleccion">
+                          <option value="1">Amazonas</option>
+                          <option value="2">Antioquia</option>
+                          <option value="3">Arauca</option>
+                          <option value="4">Atl&aacute;ntico</option>
+                          <option value="5">Bol&iacute;var</option>
+                          <option value="6">Boyac&aacute;</option>
+                          <option value="7">Caldas</option>
+                          <option value="8">Caquet&aacute;</option>
+                          <option value="9">Casanare</option>
+                          <option value="10">Cauca</option>
+                          <option value="11">Cesar</option>
+                          <option value="12">Choc&oacute;</option>
+                          <option value="13">C&oacute;rdoba</option>
+                          <option value="14">Cundinamarca</option>
+                          <option value="15">Guain&iacute;a</option>
+                          <option value="16">Guaviare</option>
+                          <option value="17">Huila</option>
+                          <option value="18">La Guajira</option>
+                          <option value="19">MAgdalena</option>
+                          <option value="20">Meta</option>
+                          <option value="21">Nariño</option>
+                          <option value="22">Norte de Santander</option>
+                          <option value="23">Putumayo</option>
+                          <option value="24">Quind&iacute;o</option>
+                          <option value="25">Risaralda</option>
+                          <option value="26">San Andr&eacute;s y Providencia</option>
+                          <option value="27">Santander</option>
+                          <option value="28">Sucre</option>
+                          <option value="29">Tolima</option>
+                          <option value="30">Valle del Cauca</option>
+                          <option value="31">Vaup&eacute;s</option>
+                          <option value="32">Vichada</option>      
+                      </select>
+                  </td>
+                  <td class="campo">Ciudad</td>
+                  <td>
+                      <input name="Ciudad"type="text"/>
+                  </td>                  
+              </tr>
+              <tr>
+                  <td class="campo">Telefono</td>
+                  <td>
+                      <input name="Telefono" type="tel" />
+                  </td>
+                  <td class="campo">Estado Laboral</td>
+                  <td>
+                      <select name="EstLaboral"class="seleccion">
+                          <option value="1">Empleado</option>
+                          <option value="2">Desempleado</option>
+                      </select>
+                  </td>                  
+              </tr>
+              <tr>
+                  <td class="campo">Correo Electronico</td>
+                  <td >
+                      <input name="correo" type="email" placeholder="algo@algo.com" required />
+                  </td>
+                  <td class="campo">Nivel Academico</td>
+                  <td>
+                      <select name="titulo" class="seleccion">
+                        <option value="1">Tecnico</option>
+                        <option value="2">Tecnologo</option>
+                      </select>
+                  </td>                
+              </tr>
+              <tr>
+                  <td class="campo">Titulo</td>
+                  <td colspan="3">
+                      <input id="largo" name="titulo" tyoe"text" placeholder="Tecnologo en Cableado Estructurado" required />
+                  </td>                  
+              <tr>
+                <td>
+                  <button class="botones">Otros Estudios</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
